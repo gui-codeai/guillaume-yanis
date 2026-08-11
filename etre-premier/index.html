@@ -1,0 +1,1027 @@
+<!doctype html>
+<html lang="fr-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Un joli site ne ramène pas de chantiers. Être 1er sur Google, oui. — Guillaume &amp; Yanis</title>
+<meta name="description" content="Artisan en Suisse romande : regarde ce qui se passe quand quelqu'un tape ton métier et ta ville sur Google, et ce que ça te coûte chaque mois de ne pas être en haut.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_CH">
+<meta property="og:title" content="Un joli site ne ramène pas de chantiers. Être 1er sur Google, oui.">
+<meta property="og:description" content="Ce qui fait sonner le téléphone, ce n'est pas d'avoir un site. C'est de sortir en haut quand quelqu'un tape ton métier et ta ville.">
+<!-- À COMPLÉTER une fois le domaine en ligne :
+     <link rel="canonical" href="https://TON-DOMAINE.ch/etre-premier/">
+     <meta property="og:url" content="https://TON-DOMAINE.ch/etre-premier/">
+     <meta property="og:image" content="https://TON-DOMAINE.ch/og.jpg">   (1200x630) -->
+<link rel="icon" href="assets/logo-64.png">
+<link rel="apple-touch-icon" href="assets/logo-180.png">
+<link rel="preconnect" href="https://assets.calendly.com" crossorigin>
+<link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+<link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+<style>
+:root{
+  --ink:#141210; --ink-2:#4a433c; --ink-3:#7d746a;
+  --paper:#faf8f5; --card:#ffffff; --line:#e7dfd4; --line-2:#d5cabb;
+  --accent:#c8451f; --accent-dark:#a63715; --accent-soft:#fceee9;
+  --dark:#17150f; --dark-2:#211e16; --dark-line:#39342a;
+  --gain:#2f7d4f; --blue:#1a73e8;
+  --radius:14px; --radius-lg:22px; --maxw:1080px;
+  --font:"Inter","Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font);font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3{margin:0;line-height:1.1;letter-spacing:-.025em;font-weight:800}
+h1{font-size:clamp(31px,7.4vw,58px)}
+h2{font-size:clamp(24px,5.2vw,38px)}
+h3{font-size:clamp(19px,3.4vw,23px);letter-spacing:-.015em}
+p{margin:0}
+a{color:inherit}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.narrow{max-width:760px;margin-left:auto;margin-right:auto}
+section{padding:56px 0}
+@media(min-width:820px){section{padding:80px 0}}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.lead{font-size:clamp(17px,2.4vw,20px);color:var(--ink-2);line-height:1.55}
+
+/* ---------------- BOUTONS ---------------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--accent);color:#fff;text-decoration:none;font-weight:700;
+  font-size:17px;padding:17px 28px;border-radius:11px;border:0;cursor:pointer;
+  box-shadow:0 8px 22px -10px rgba(200,69,31,.75);
+  transition:transform .12s ease, background .15s ease;
+  text-align:center;line-height:1.25;font-family:inherit;
+}
+.btn:hover{background:var(--accent-dark);transform:translateY(-1px)}
+.btn:active{transform:translateY(0)}
+.btn--big{width:100%;padding:20px 26px;font-size:18px}
+@media(min-width:560px){.btn--big{width:auto;min-width:340px}}
+
+/* ---------------- HEADER ---------------- */
+.topbar{border-bottom:1px solid var(--line);background:rgba(250,248,245,.92);backdrop-filter:blur(8px);position:sticky;top:0;z-index:50}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{font-weight:800;letter-spacing:-.02em;font-size:16px}
+.brand span{color:var(--accent)}
+.topbar .loc{font-size:13px;color:var(--ink-3)}
+
+/* ---------------- HERO ---------------- */
+.hero{padding:52px 0 44px;position:relative;overflow:hidden}
+@media(min-width:820px){.hero{padding:78px 0 60px}}
+.hero::after{
+  content:"";position:absolute;inset:auto -20% -70% 42%;height:420px;
+  background:radial-gradient(closest-side,rgba(200,69,31,.09),transparent);pointer-events:none;
+}
+.hero h1{max-width:28ch;position:relative}
+h1 sup,h2 sup{font-size:.46em;font-weight:800;vertical-align:super;line-height:0;letter-spacing:0}
+.hero .lead{margin-top:20px;max-width:56ch;position:relative}
+.hero-cta{margin-top:30px;display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative}
+.hero-note{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-3)}
+.hero-note::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gain);flex:0 0 auto}
+
+/* ---------------- SÉQUENCE ---------------- */
+.seq{border-top:1px solid var(--line)}
+.seq-step{padding:52px 0;border-bottom:1px solid var(--line)}
+@media(min-width:820px){.seq-step{padding:72px 0}}
+.seq-step:nth-child(even){background:#fff}
+.step-num{
+  display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--accent);
+  background:var(--accent-soft);border-radius:99px;padding:5px 12px;margin-bottom:16px;
+}
+.seq-step h2{max-width:20ch}
+.seq-step .lead{margin-top:16px;max-width:58ch}
+
+/* --- les 2 champs qui personnalisent la démo --- */
+.inputs2{display:grid;gap:12px;grid-template-columns:1fr;margin-top:28px;max-width:560px}
+@media(min-width:560px){.inputs2{grid-template-columns:1.3fr 1fr}}
+.inputs2 label{display:block;font-size:13px;font-weight:700;color:var(--ink-3);margin-bottom:7px;letter-spacing:.02em}
+select,input[type=text]{
+  width:100%;font:inherit;font-size:16px;font-weight:600;color:var(--ink);
+  padding:13px 14px;border:1.5px solid var(--line-2);border-radius:11px;background:#fff;
+}
+select{
+  padding-right:42px;appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' stroke='%237d746a' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 15px center;
+}
+select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* --- la fausse page de résultats Google --- */
+.serp{
+  margin-top:30px;max-width:520px;background:#fff;border:1px solid var(--line);
+  border-radius:20px;overflow:hidden;box-shadow:0 26px 50px -34px rgba(20,18,16,.5);
+}
+.serp-top{padding:16px 16px 12px;border-bottom:1px solid #f0ece5}
+.serp-bar{
+  display:flex;align-items:center;gap:10px;border:1px solid #ddd6cc;border-radius:99px;
+  padding:11px 16px;font-size:15px;color:var(--ink);background:#fff;
+}
+.serp-bar svg{flex:0 0 auto;opacity:.55}
+.serp-bar span{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.serp-map{
+  height:104px;background:
+    linear-gradient(105deg,#e8eee6 0%,#eef1ea 50%,#e6ebe4 100%);
+  position:relative;border-bottom:1px solid #f0ece5;
+}
+.serp-map::before,.serp-map::after{
+  content:"";position:absolute;background:#dfe4da;
+}
+.serp-map::before{left:0;right:0;top:44px;height:9px;transform:rotate(-3deg)}
+.serp-map::after{top:0;bottom:0;left:38%;width:9px;transform:rotate(4deg)}
+.pin{
+  position:absolute;width:22px;height:22px;border-radius:50% 50% 50% 0;background:var(--accent);
+  transform:rotate(-45deg);box-shadow:0 3px 6px rgba(0,0,0,.25);
+}
+.pin i{position:absolute;inset:6px;background:#fff;border-radius:50%}
+.pin.p1{left:22%;top:26px}.pin.p2{left:52%;top:52px}.pin.p3{left:74%;top:22px}
+.pin.you{background:#b4aca1;width:18px;height:18px;left:12%;top:70px;opacity:.85}
+.serp-list{padding:6px 0}
+.serp-item{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid #f4f1ea}
+.serp-item:last-child{border-bottom:0}
+.serp-rank{
+  flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--dark);color:#fff;
+  font-size:13px;font-weight:800;display:grid;place-items:center;
+}
+.serp-body{flex:1 1 auto;min-width:0}
+.serp-name{font-weight:700;font-size:15px;color:#1b2f6b;letter-spacing:-.01em}
+.serp-meta{font-size:13px;color:var(--ink-3);display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.serp-meta .stars{color:#e8a33d;letter-spacing:1px}
+.serp-call{
+  flex:0 0 auto;font-size:12px;font-weight:800;color:var(--blue);border:1px solid #cfe0fb;
+  background:#f2f7fe;border-radius:99px;padding:6px 11px;
+}
+.serp-sep{padding:11px 16px;font-size:13px;color:var(--ink-3);background:#fbf9f5;border-top:1px solid #f4f1ea;border-bottom:1px solid #f4f1ea}
+.serp-you{background:#fbf9f5;opacity:.95}
+.serp-you .serp-rank{background:#c3bbaf}
+.serp-you .serp-name{color:var(--ink-3)}
+.serp-cap{margin-top:14px;font-size:14px;color:var(--ink-3);max-width:520px}
+.verif{margin-top:22px;max-width:520px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.btn--ghost{
+  background:#fff;color:var(--ink);border:1.5px solid var(--ink);box-shadow:none;font-size:16px;padding:15px 22px;
+}
+.btn--ghost:hover{background:var(--ink);color:#fff}
+.verif .note{font-size:13.5px;color:var(--ink-3)}
+
+/* --- chiffres clés --- */
+.stats{display:grid;gap:14px;grid-template-columns:1fr;margin-top:30px}
+@media(min-width:700px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.stat .n{font-size:34px;font-weight:800;letter-spacing:-.03em;color:var(--accent);line-height:1;margin-bottom:8px}
+.stat p{font-size:15.5px;color:var(--ink-2)}
+
+/* --- estimation --- */
+.calc{
+  margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);
+  overflow:hidden;box-shadow:0 30px 60px -40px rgba(20,18,16,.35);
+}
+.calc-grid{display:grid;grid-template-columns:1fr}
+@media(min-width:900px){.calc-grid{grid-template-columns:1fr 1fr}}
+.calc-inputs{padding:26px 20px}
+@media(min-width:560px){.calc-inputs{padding:32px}}
+.field{margin-bottom:28px}
+.field:last-child{margin-bottom:0}
+.field .lbl{display:block;font-weight:700;font-size:15px}
+.field .hint{font-weight:400;color:var(--ink-3);font-size:13px;display:block;margin-top:3px}
+.slider-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:10px}
+.slider-val{font-weight:800;font-size:20px;font-variant-numeric:tabular-nums;white-space:nowrap}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:34px;background:transparent;cursor:pointer;margin:0;display:block}
+input[type=range]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input[type=range]::-webkit-slider-runnable-track{height:8px;border-radius:99px;background:var(--track,#eee5d9)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;border-radius:50%;background:#fff;border:3px solid var(--accent);margin-top:-10px;box-shadow:0 3px 10px rgba(20,18,16,.25)}
+input[type=range]::-moz-range-track{height:8px;border-radius:99px;background:#eee5d9}
+input[type=range]::-moz-range-progress{height:8px;border-radius:99px;background:var(--accent)}
+input[type=range]::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:#fff;border:3px solid var(--accent);box-shadow:0 3px 10px rgba(20,18,16,.25)}
+.scale{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-3);margin-top:-2px}
+.calc-out{background:var(--dark);color:#efe9df;padding:28px 20px 30px}
+@media(min-width:560px){.calc-out{padding:32px}}
+.out-label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#a79c8c;font-weight:700}
+.big-number{font-size:clamp(42px,11.5vw,62px);font-weight:800;letter-spacing:-.03em;color:#fff;line-height:1;margin:12px 0 6px;font-variant-numeric:tabular-nums}
+.big-number .chf{font-size:.4em;font-weight:700;color:var(--accent);margin-left:8px;letter-spacing:0}
+.big-sub{color:#b9b0a2;font-size:15px}
+.big-sub b{color:#fff}
+.rows{margin-top:24px;border-top:1px solid var(--dark-line)}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:13px 0;border-bottom:1px solid var(--dark-line);font-size:15px}
+.row .k{color:#b9b0a2}
+.row .v{font-weight:800;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.row .v.hot{color:#ff8a63}
+.verdict{margin-top:22px;background:var(--dark-2);border:1px solid var(--dark-line);border-left:3px solid var(--accent);border-radius:10px;padding:16px 18px;font-size:15px;color:#d9d1c4}
+.verdict b{color:#fff}
+.calc-cta{margin-top:22px}
+.calc-cta .btn{width:100%}
+.calc-foot{border-top:1px solid var(--line);background:#fff;padding:18px 20px}
+@media(min-width:560px){.calc-foot{padding:20px 32px}}
+details.method summary{cursor:pointer;font-weight:700;font-size:15px;list-style:none;display:flex;align-items:center;gap:10px}
+details.method summary::-webkit-details-marker{display:none}
+details.method summary::before{content:"+";width:22px;height:22px;flex:0 0 auto;border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:800;display:grid;place-items:center;font-size:15px;line-height:1}
+details.method[open] summary::before{content:"–"}
+details.method .body{padding-top:16px;font-size:15px;color:var(--ink-2)}
+details.method ul{margin:0;padding-left:20px}
+details.method li{margin-bottom:9px}
+details.method li b{color:var(--ink)}
+
+/* --- ce qu'on fait --- */
+.does{display:grid;gap:14px;grid-template-columns:1fr;margin-top:30px}
+@media(min-width:760px){.does{grid-template-columns:repeat(3,1fr)}}
+.do{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.do b{display:block;margin-bottom:7px;font-size:17px}
+.do p{font-size:15.5px;color:var(--ink-2)}
+.does-note{margin-top:18px;font-size:15.5px;color:var(--ink-2)}
+.does-note b{color:var(--ink)}
+
+/* ---------------- RENDEZ-VOUS ---------------- */
+.book{background:linear-gradient(180deg,#fff,#fbf6f0);border:1.5px solid var(--line-2);border-radius:var(--radius-lg);padding:32px 22px;text-align:center}
+@media(min-width:760px){.book{padding:48px 40px}}
+.book h2{margin-bottom:14px}
+.book p{color:var(--ink-2);max-width:52ch;margin:0 auto}
+.book .btn{margin-top:26px}
+.book .rassure{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:center;margin-top:20px;font-size:14px;color:var(--ink-3)}
+.book .rassure span{display:flex;align-items:center;gap:7px}
+.book .rassure span::before{content:"✓";color:var(--gain);font-weight:800}
+.proof{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);font-size:15px;color:var(--ink-2);max-width:58ch;margin-left:auto;margin-right:auto}
+.proof b{color:var(--ink)}
+
+/* ---------------- FAQ ---------------- */
+.faq{margin-top:26px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;padding:20px 34px 20px 0;font-weight:700;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:19px;color:var(--accent);font-size:22px;font-weight:800;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .a{padding:0 0 22px;color:var(--ink-2);font-size:16px;max-width:64ch}
+
+/* ---------------- FINAL & FOOTER ---------------- */
+.final{background:var(--dark);color:#fff;text-align:center;padding:64px 0}
+.final h2{color:#fff;max-width:20ch;margin:0 auto}
+.final .btn{margin-top:28px}
+.final .sig{margin-top:24px;font-size:14px;color:#8f867a}
+footer{padding:30px 0;border-top:1px solid var(--line);font-size:14px;color:var(--ink-3)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ink)}
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(250,248,245,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);
+  transform:translateY(120%);transition:transform .28s ease;
+}
+.sticky-cta.show{transform:translateY(0)}
+.sticky-cta .btn{width:100%;padding:15px}
+@media(min-width:820px){.sticky-cta{display:none}}
+
+/* ==================================================================
+   CENTRAGE — tout le texte éditorial est centré sur la page.
+   Restent alignés à gauche : la fausse recherche Google (elle doit
+   ressembler à un vrai écran), les réglages du calculateur et la
+   liste de la méthode.
+   ================================================================== */
+.hero,
+.seq-step,
+.faq,
+.eyebrow{text-align:center}
+
+.hero h1,
+.hero .lead{margin-left:auto;margin-right:auto}
+.hero-cta{align-items:center}
+.hero::after{inset:auto -20% -70% 20%;left:20%;right:20%}
+
+.seq-step h2,
+.seq-step .lead{margin-left:auto;margin-right:auto}
+.inputs2{margin-left:auto;margin-right:auto}
+.serp{margin-left:auto;margin-right:auto;text-align:left}
+.serp-cap{margin-left:auto;margin-right:auto;text-align:center}
+.verif{margin-left:auto;margin-right:auto;align-items:center}
+.verif .note{text-align:center}
+
+.stat{text-align:center}
+.do{text-align:center}
+.does-note{max-width:66ch;margin-left:auto;margin-right:auto;text-align:center}
+
+.calc-inputs{text-align:left}
+.calc-out{text-align:center}
+.verdict{text-align:center}
+.calc-foot{text-align:left}
+
+.faq summary{padding-right:34px;padding-left:34px}
+.faq .a{margin-left:auto;margin-right:auto;padding-left:12px;padding-right:12px}
+
+/* ==================================================================
+   DIRECTION ARTISTIQUE — Artisans du bâtiment, version 1, 11 août 2026
+   Quatre couleurs, pas cinq. Le rouge souligne, encadre, attire.
+   Le noir porte le texte. Didot italique pour ce que la marque dit
+   d'elle-même, DIN Condensed pour les chiffres qu'on assène.
+   ================================================================== */
+:root{
+  --ink:#111111; --ink-2:#41403d; --ink-3:#6B6B6B;
+  --paper:#F5F2EC; --card:#FFFFFF; --line:#e2ddd2; --line-2:#cec7b8;
+  --accent:#D8232A; --accent-dark:#ae1c22; --accent-soft:#fbebeb;
+  --dark:#111111; --dark-2:#1c1c1c; --dark-line:#333333;
+  --gain:#2f7d4f;
+  --font:"Avenir Next","Avenir","Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Didot","Didot LT STD","Bodoni MT","Bodoni 72","Playfair Display",Garamond,Georgia,"Times New Roman",serif;
+  --cond:"DIN Condensed","DIN Alternate","Oswald","Haettenschweiler","Arial Narrow",Impact,sans-serif;
+}
+
+/* --- les phrases de marque : Didot italique, jamais en gras --- */
+h1,h2,.book h2,.final h2{
+  font-family:var(--serif);font-style:italic;font-weight:400;
+  letter-spacing:0;line-height:1.14;
+}
+h1{font-size:clamp(34px,7.8vw,62px)}
+h2{font-size:clamp(27px,5.6vw,42px)}
+h1 sup,h2 sup{font-weight:400;font-size:.42em}
+.seq-step h2{max-width:24ch}
+.final h2{max-width:24ch}
+
+/* --- les bandeaux et libellés : Avenir, capitales, interlettrage large --- */
+.eyebrow{font-weight:700;letter-spacing:.2em}
+.step-num{
+  border-radius:2px;background:var(--accent);color:var(--paper);
+  letter-spacing:.18em;padding:6px 13px;
+}
+.out-label{letter-spacing:.16em}
+.inputs2 label,.scale span{text-transform:uppercase;letter-spacing:.1em}
+.topbar .loc{text-transform:uppercase;letter-spacing:.14em;font-size:11.5px;font-weight:700}
+.brand{display:flex;align-items:center;gap:10px;font-size:15px}
+.brand img{border-radius:50%;display:block}
+.brand span{color:var(--accent)}
+
+/* --- les boutons : libellés, donc capitales --- */
+.btn{
+  border-radius:2px;text-transform:uppercase;letter-spacing:.09em;
+  font-size:14.5px;font-weight:700;box-shadow:none;
+}
+.btn--big{font-size:15.5px;padding:21px 30px}
+.btn:hover{transform:none;background:var(--accent-dark)}
+.btn--ghost{border:2px solid var(--ink);font-size:14px}
+
+/* --- les chiffres : DIN Condensed, capitales, très grande taille --- */
+.stat .n,.big-number,.slider-val{
+  font-family:var(--cond);text-transform:uppercase;font-weight:700;letter-spacing:.01em;
+}
+.stat .n{font-size:44px}
+.big-number{font-size:clamp(50px,13vw,74px)}
+.big-number .chf{font-size:.34em}
+
+
+/* --- le trait tracé à la main, sous la phrase de marque --- */
+.trait{
+  width:min(300px,62%);height:11px;margin:18px auto 0;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='11' viewBox='0 0 300 11'%3E%3Cpath d='M4 7C58 2 104 9 152 5s92-4 144 2' stroke='%23D8232A' stroke-width='4.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/contain;
+}
+
+/* --- ajustements de surfaces --- */
+.stat,.do,.serp,.calc,.book{border-radius:3px}
+.calc{border-radius:3px}
+.verdict{border-radius:2px}
+.hero::after{display:none}
+.serp{border-radius:14px}
+.faq summary::after,.final .sig{letter-spacing:.02em}
+.final{background:var(--dark)}
+.book{background:var(--card);border-color:var(--line-2)}
+.book .rassure span::before{color:var(--accent)}
+.hero-note::before{background:var(--accent)}
+details.method summary::before{background:var(--accent-soft);color:var(--accent)}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><img src="assets/logo-64.png" alt="" width="34" height="34">Guillaume <span>&amp;</span> Yanis</div>
+    <div class="loc">Suisse romande</div>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Artisans du bâtiment en Suisse</div>
+    <h1>Un joli site ne ramène pas<br>de chantiers.<br>Être 1<sup>er</sup> sur Google, oui.</h1>
+    <div class="trait" aria-hidden="true"></div>
+    <p class="lead">
+      Quand quelqu'un cherche ton métier dans ta région, il appelle un des 3 premiers.
+      Les autres, il ne les voit même pas.
+    </p>
+    <div class="hero-cta">
+      <a href="#sequence" class="btn btn--big">Voir ce qui se passe chez toi</a>
+      <div class="hero-note">En seulement 2 minutes</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== SÉQUENCE D'ÉDUCATION ====================== -->
+<div class="seq" id="sequence">
+
+  <!-- ÉTAPE 1 — la vitrine dans la rue déserte -->
+  <section class="seq-step">
+    <div class="wrap">
+      <span class="step-num">01</span>
+      <h2>Ton site n'est pas mauvais.<br>Il est dans une rue où personne ne passe.</h2>
+      <p class="lead">
+        On t'a vendu une belle image : des photos professionnelles, ton logo, tes réalisations,
+        les informations de ta boîte… CHF 3'000.- parfois plus. Et depuis, le téléphone sonne
+        comme avant.
+      </p>
+      <p class="lead" style="margin-top:16px">
+        C'est normal, et ce n'est pas ta faute.<br>Une vitrine magnifique dans une rue déserte reste
+        une vitrine dans une rue déserte. Tu ne perds pas des chantiers parce que ton site est
+        moche. Tu en perds parce que personne ne tombe dessus.
+      </p>
+      <p class="lead" style="margin-top:16px">
+        Ce qu'ils ne t'ont jamais vendu, c'est la chose qui compte le plus.<br>Faire un site qui
+        rapporte des nouveaux clients tous les mois.
+      </p>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 2 — la démo Google -->
+  <section class="seq-step">
+    <div class="wrap">
+      <span class="step-num">02</span>
+      <h2>C'est cet écran qui décide qui il appelle</h2>
+      <p class="lead">
+        Celui qui vient d'acheter dans ta commune ne connaît personne. Il ne va pas demander au
+        voisin. Il sort son natel et il tape sur Google ton métier et ta ville. Essaie en dessous.
+      </p>
+
+      <div class="inputs2">
+        <div>
+          <label for="metier">Ton métier</label>
+          <select id="metier"></select>
+        </div>
+        <div>
+          <label for="ville">Ta ville</label>
+          <input type="text" id="ville" value="Sion" maxlength="24" autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+
+      <div class="serp">
+        <div class="serp-top">
+          <div class="serp-bar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+              <circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5" stroke-linecap="round"></path>
+            </svg>
+            <span id="serp-query">sanitaire Sion</span>
+          </div>
+        </div>
+        <div class="serp-map" aria-hidden="true">
+          <div class="pin p1"><i></i></div>
+          <div class="pin p2"><i></i></div>
+          <div class="pin p3"><i></i></div>
+          <div class="pin you"><i></i></div>
+        </div>
+        <div class="serp-list">
+          <div class="serp-item">
+            <div class="serp-rank">1</div>
+            <div class="serp-body">
+              <div class="serp-name">Un gars de ta ville</div>
+              <div class="serp-meta"><span class="stars">★★★★★</span> 4,8 · 61 avis · Ouvert</div>
+            </div>
+            <div class="serp-call">Appeler</div>
+          </div>
+          <div class="serp-item">
+            <div class="serp-rank">2</div>
+            <div class="serp-body">
+              <div class="serp-name">Un autre, à vingt bornes</div>
+              <div class="serp-meta"><span class="stars">★★★★☆</span> 4,5 · 34 avis · Ouvert</div>
+            </div>
+            <div class="serp-call">Appeler</div>
+          </div>
+          <div class="serp-item">
+            <div class="serp-rank">3</div>
+            <div class="serp-body">
+              <div class="serp-name">Un troisième</div>
+              <div class="serp-meta"><span class="stars">★★★★☆</span> 4,4 · 22 avis · Ouvert</div>
+            </div>
+            <div class="serp-call">Appeler</div>
+          </div>
+          <div class="serp-sep">… puis une dizaine d'autres résultats que presque personne ne descend voir.</div>
+          <div class="serp-item serp-you">
+            <div class="serp-rank">?</div>
+            <div class="serp-body">
+              <div class="serp-name" id="serp-you">Ton entreprise, quelque part là-dedans</div>
+              <div class="serp-meta">Beau site · Aucun appel</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="serp-cap">
+        Il ne descend pas plus bas, et il ne saura jamais que tu existes. (Toi non plus, d'ailleurs.)
+      </p>
+
+      <div class="verif">
+        <a href="#" id="btn-google" target="_blank" rel="noopener" class="btn btn--ghost">
+          Ne nous crois pas, va voir
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 3 — les trois faits -->
+  <section class="seq-step">
+    <div class="wrap">
+      <span class="step-num">03</span>
+      <h2>3 choses que la plupart des artisans comprennent trop tard</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="n">8 sur 10</div>
+          <p>C'est le nombre de Suisses qui commencent par chercher sur Google quand ils ont besoin
+            d'une entreprise qu'ils ne connaissent pas.<br>Ton bouche-à-oreille, c'est ton meilleur
+            commercial. Le problème, c'est qu'il ne parle qu'aux gens qui te connaissent déjà.</p>
+        </div>
+        <div class="stat">
+          <div class="n">Les 3 premiers</div>
+          <p>Les trois premiers résultats de la fiche Google prennent 98 % des appels.<br>En quatrième
+            position tu existes déjà à peine. En deuxième page, tu n'existes pas.</p>
+        </div>
+        <div class="stat">
+          <div class="n">0 trace</div>
+          <p>Cette perte-là ne laisse rien derrière elle : pas de mail, pas d'appel manqué, aucune
+            ligne dans ta compta. Le chantier a bien eu lieu. Il s'est fait chez un autre.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 4 — le chiffre -->
+  <section class="seq-step">
+    <div class="wrap">
+      <span class="step-num">04</span>
+      <h2>Ce que ça te coûte, chez toi</h2>
+      <p class="lead">
+        3 curseurs. On calcule toujours au plus bas, et on te montre la stratégie complète juste
+        en dessous.
+      </p>
+
+      <div class="calc" id="calculateur">
+        <div class="calc-grid">
+          <div class="calc-inputs">
+            <div class="field">
+              <div class="slider-head">
+                <span class="lbl">Habitants dans ta zone
+                  <span class="hint">Ta commune + celles où tu te déplaces</span>
+                </span>
+                <span class="slider-val" id="v-hab">25'000</span>
+              </div>
+              <input type="range" id="habitants" min="2000" max="150000" step="1000" value="25000" aria-label="Habitants dans ta zone">
+              <div class="scale"><span>2'000</span><span>150'000</span></div>
+            </div>
+
+            <div class="field">
+              <div class="slider-head">
+                <span class="lbl">Ton chantier moyen
+                  <span class="hint">Ce que tu factures sur un chantier, en moyenne</span>
+                </span>
+                <span class="slider-val" id="v-panier">4'500 CHF</span>
+              </div>
+              <input type="range" id="panier" min="500" max="50000" step="500" value="4500" aria-label="Montant moyen d'un chantier">
+              <div class="scale"><span>500 CHF</span><span>50'000 CHF</span></div>
+            </div>
+
+            <div class="field">
+              <label class="lbl" for="position" style="margin-bottom:10px;display:block">
+                Aujourd'hui, tu sors où ?
+                <span class="hint">Fais le test sur ton natel, c'est plus fiable que le souvenir</span>
+              </label>
+              <select id="position">
+                <option value="invisible">Je ne sors pas / je ne sais pas</option>
+                <option value="page2">Loin, il faut descendre ou changer de page</option>
+                <option value="top10">Sur la première page, mais pas en haut</option>
+                <option value="top3">Dans les trois premiers</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="calc-out">
+            <div class="out-label">Ce qui part chez quelqu'un d'autre</div>
+            <div class="big-number"><span id="r-mois">0</span><span class="chf">CHF / mois</span></div>
+            <div class="big-sub" id="r-an">soit <b>0 CHF</b> sur douze mois</div>
+            <div class="rows">
+              <div class="row"><span class="k">Recherches par mois dans ta zone</span><span class="v" id="r-recherches">0</span></div>
+              <div class="row"><span class="k">Des gens qui appellent vraiment un artisan</span><span class="v" id="r-demandes">0</span></div>
+              <div class="row"><span class="k">Demandes qui ne t'arrivent jamais</span><span class="v hot" id="r-perdues">0</span></div>
+              <div class="row"><span class="k">Chantiers que ça représente / mois</span><span class="v hot" id="r-chantiers">0</span></div>
+            </div>
+            <div class="verdict" id="verdict"></div>
+            <div class="calc-cta">
+              <a href="#rdv" class="btn js-book">Je veux mon vrai chiffre</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-foot">
+          <details class="method">
+            <summary>Comment on calcule, et avec quels chiffres</summary>
+            <div class="body">
+              <ul>
+                <li><b>Les recherches.</b> Un nombre de recherches par mois et par tranche de 10'000
+                  habitants, propre à chaque métier. On prend la fourchette basse, jamais la haute.</li>
+                <li><b>Une personne sur trois appelle.</b> Les deux autres comparent, repoussent le
+                  projet ou le font elles-mêmes. On ne les compte pas.</li>
+                <li><b>Le trio de tête prend l'essentiel.</b> On ne compte que l'écart entre ta
+                  position d'aujourd'hui et celle des trois premiers. Pas la totalité du marché.</li>
+                <li><b>Une demande sur trois devient un chantier.</b> C'est le chiffre que donnent
+                  les artisans eux-mêmes sur leurs demandes de prix.</li>
+              </ul>
+              <p style="margin-top:14px">
+                C'est une estimation, pas ta comptabilité, et on préfère le dire. Au téléphone, on la
+                remplace par les vraies recherches sur tes communes et par le nom de celui qui sort
+                devant toi.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÉTAPE 5 — ce qu'on fait -->
+  <section class="seq-step">
+    <div class="wrap">
+      <span class="step-num">05</span>
+      <h2>On ne fait pas des sites. On fait des sites qui sortent.</h2>
+      <p class="lead">
+        On refait le tien, ou on le construit s'il n'existe pas, pour deux choses.<br>
+        1. Sortir en haut quand on cherche ton métier autour de chez toi.<br>
+        2. Qu'il t'appelle au lieu de fermer la page.
+      </p>
+      <div class="does">
+        <div class="do">
+          <b>Une page par métier et par commune</b>
+          <p>« Sanitaire Sion », « chauffage Conthey ». C'est comme ça que les gens tapent, donc
+            c'est comme ça que le site est construit.</p>
+        </div>
+        <div class="do">
+          <b>Ta fiche Google et Maps</b>
+          <p>L'encadré avec ton nom et ton numéro sur Google Maps. Sur un natel, c'est la première
+            chose qui sort. Et c'est de là que partent les appels.</p>
+        </div>
+        <div class="do">
+          <b>Un site fait pour qu'on t'appelle</b>
+          <p>Tes chantiers en photo, ton numéro visible partout, aucune page où il faut réfléchir.
+            Être trouvé ne sert à rien s'il repart.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ========================= RENDEZ-VOUS ========================= -->
+<section>
+  <div class="wrap">
+    <div class="book" id="rdv">
+      <h2>On s'appelle, et tu sais enfin où tu en es</h2>
+      <p>
+        On tape ton métier et ta commune en direct. Combien de gens cherchent ça chez toi chaque
+        mois, qui sort devant toi aujourd'hui, et ce que ça coûte de passer devant.
+      </p>
+      <a href="#" class="btn btn--big js-book">Choisir un créneau</a>
+      <div class="rassure">
+        <span>Gratuit et sans engagement</span>
+        <span>On te donne le prix pendant l'appel</span>
+        <span>Si ce n'est pas pour toi, on te le dit directement</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FAQ ============================== -->
+<section style="padding-top:24px">
+  <div class="wrap narrow">
+    <div class="eyebrow">Les questions qu'on nous pose</div>
+    <h2>Avant que tu la poses</h2>
+    <div class="faq">
+      <details>
+        <summary>J'ai déjà payé un site, il ne m'a rien rapporté.</summary>
+        <div class="a">On te croit, et c'est normal. Un site vitrine tout seul ne ramène rien, on le
+          dit avant toi. Ce qui ramène des demandes, c'est d'être là où les gens cherchent : des
+          pages par métier et par commune, et la fiche Google avec le plan. C'est un autre travail
+          que celui qu'on t'a facturé.</div>
+      </details>
+      <details>
+        <summary>C'est quoi la durée d'engagement ?</summary>
+        <div class="a">Trois mois. Pas trois ans, trois mois. Et voilà pourquoi : Google met au
+          minimum deux mois à bouger. Si on te faisait signer un seul mois, on te ferait payer un
+          résultat qui n'existe pas encore. Après ces trois mois, tu arrêtes quand tu veux. Pas de
+          reconduction automatique, pas de résiliation à envoyer six mois à l'avance.</div>
+      </details>
+      <details>
+        <summary>Si j'arrête, le site il devient quoi ?</summary>
+        <div class="a">Il reste à toi. Le nom de domaine est enregistré à ton nom, les accès sont à
+          ton nom, tu pars avec tout. Il ne s'éteint pas le jour où tu arrêtes de payer. C'est la
+          question à poser à n'importe quelle agence, d'ailleurs. Pose-la, et regarde la tête
+          qu'ils font.</div>
+      </details>
+      <details>
+        <summary>Vous garantissez la première place ?</summary>
+        <div class="a">Non. Personne ne contrôle Google, et ceux qui te la garantissent te racontent
+          des salades. Ce qu'on fait, c'est construire le site <em>pour</em> qu'il sorte en haut sur
+          ton métier et tes communes, et travailler la position tous les mois. Le résultat, tu le
+          vérifies toi-même sur ton écran.</div>
+      </details>
+      <details>
+        <summary>Ça met combien de temps ?</summary>
+        <div class="a">Le site est en ligne vite. Google, lui, met au minimum deux mois à bouger, et
+          c'est vrai pour nous comme pour n'importe qui. Si quelqu'un te promet la première page en
+          trois semaines, soit il te ment, soit il te vend de la publicité payante sans te le dire.</div>
+      </details>
+      <details>
+        <summary>Ça coûte combien ?</summary>
+        <div class="a">Ça dépend de ta zone et du nombre de métiers à couvrir. Un chiffre unique sur
+          cette page serait faux une fois sur deux. Ce qu'on peut te dire : deux à cinq fois moins
+          cher qu'une agence romande, qui facture entre 3'000 et 8'000 francs pour un site vitrine.
+          Tu as le montant exact pendant l'appel, dès qu'on a vu ta zone. Et il ne change pas selon
+          la tête du client.</div>
+      </details>
+      <details>
+        <summary>J'ai pas le temps, je suis artisan pas informaticien.</summary>
+        <div class="a">Trente minutes au téléphone en tout, et tes photos de chantier depuis ton
+          natel. On écrit les textes, on construit les pages, on reprend ta fiche Google. Tu n'écris
+          pas un mot et tu n'as rien à comprendre. On te prévient quand c'est en ligne.</div>
+      </details>
+      <details>
+        <summary>Je suis déjà débordé, j'ai pas besoin de plus de travail.</summary>
+        <div class="a">La question n'est pas d'avoir plus de travail, c'est d'avoir le choix. Avec
+          trois demandes par mois tu prends tout, y compris le chantier que tu n'as pas envie de
+          faire, au prix qu'on te marchande. Avec dix, tu prends les trois meilleurs et tu montes
+          tes prix. Et en février, quand ça se calme, tu es content que ça ne dépende plus de qui
+          parle de toi.</div>
+      </details>
+      <details>
+        <summary>Vous êtes qui, exactement ?</summary>
+        <div class="a">Deux gars de Suisse romande. Yanis fait les sites et Google, Guillaume les
+          publicités. On ne travaille qu'avec des artisans du bâtiment d'ici, on connaît les
+          communes, et on n'a ni bureau à Lausanne ni commercial à faire vivre. C'est aussi pour ça
+          qu'on coûte moins cher qu'une agence.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= FINAL ============================= -->
+<section class="final">
+  <div class="wrap">
+    <h2>Tu bosses bien.<br>Ça devrait se voir.</h2>
+    <a href="#" class="btn btn--big js-book">Choisir un créneau</a>
+    <div class="sig">Guillaume &amp; Yanis — Suisse romande</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Guillaume &amp; Yanis — Suisse romande</span>
+    <span><a href="../">Politique de confidentialité</a></span>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta">
+  <a href="#rdv" class="btn js-book">On s'appelle quand tu veux</a>
+</div>
+
+<script>
+/* ==================================================================
+   LES 2 SEULES CHOSES À REMPLIR AVANT DE LANCER LA CAMPAGNE
+   ================================================================== */
+var CONFIG = {
+  CALENDLY_URL : "https://calendly.com/atelier-ai/coaching-media-buying",
+  META_PIXEL_ID: "1422046426446182"                       /* pixel Meta — posé le 11 août 2026 */
+};
+/* ================================================================== */
+</script>
+
+<script>
+/* ---------------- PIXEL META ---------------- */
+(function(){
+  if(CONFIG.META_PIXEL_ID === "TON_PIXEL_ID") return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,
+  'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', CONFIG.META_PIXEL_ID);
+  fbq('track', 'PageView');
+})();
+function track(event, custom){
+  if(typeof fbq !== "function") return;
+  if(custom) fbq('trackCustom', event); else fbq('track', event);
+}
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://www.facebook.com/tr?id=1422046426446182&ev=PageView&noscript=1"></noscript>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Données par métier ----------
+     idx    = recherches locales par mois pour 10'000 habitants (fourchette basse)
+     requete = ce qui s'affiche dans la barre de recherche
+     panier = chantier moyen par défaut, en CHF                                     */
+  var METIERS = [
+    {id:"sanitaire",   label:"Sanitaire / chauffagiste",        requete:"sanitaire",   idx:24, panier:4500},
+    {id:"electricien", label:"Électricien",                     requete:"électricien", idx:21, panier:3500},
+    {id:"nettoyage",   label:"Nettoyage / multiservices",       requete:"nettoyage",   idx:16, panier:1500},
+    {id:"paysagiste",  label:"Paysagiste / jardinier",          requete:"paysagiste",  idx:14, panier:6000},
+    {id:"peintre",     label:"Peintre en bâtiment",             requete:"peintre",     idx:13, panier:5000},
+    {id:"serrurier",   label:"Serrurier / métallier",           requete:"serrurier",   idx:12, panier:3000},
+    {id:"menuisier",   label:"Menuisier / ébéniste",            requete:"menuisier",   idx:11, panier:9000},
+    {id:"autre",       label:"Autre métier du bâtiment",        requete:"artisan",     idx:10, panier:5000},
+    {id:"macon",       label:"Maçon / maçonnerie",              requete:"maçon",       idx:9,  panier:12000},
+    {id:"carreleur",   label:"Carreleur",                       requete:"carreleur",   idx:8,  panier:6000},
+    {id:"couvreur",    label:"Couvreur / ferblantier",          requete:"couvreur",    idx:7,  panier:15000},
+    {id:"platrier",    label:"Plâtrier / plaquiste",            requete:"plâtrier",    idx:6,  panier:7000},
+    {id:"stores",      label:"Vitrier / stores / fenêtres",     requete:"stores",      idx:6,  panier:4000},
+    {id:"cuisiniste",  label:"Cuisiniste / agenceur",           requete:"cuisiniste",  idx:5,  panier:18000}
+  ];
+
+  var CAPTURE    = { invisible:0.02, page2:0.06, top10:0.12, top3:0.28 };
+  var CIBLE_TOP3 = 0.28;   /* ce que capte le trio de tête */
+  var TAUX_APPEL = 0.33;   /* 1 personne sur 3 qui cherche contacte vraiment une entreprise */
+  var TAUX_SIGNE = 0.33;   /* 1 demande sur 3 devient un chantier */
+
+  function $(id){ return document.getElementById(id); }
+  var elMetier = $("metier"), elVille = $("ville"),
+      elHab = $("habitants"), elPanier = $("panier"), elPos = $("position");
+
+  function fmt(n){
+    n = Math.round(n);
+    var s = String(Math.abs(n)), out = "", c = 0, i;
+    for(i = s.length - 1; i >= 0; i--){
+      out = s.charAt(i) + out; c++;
+      if(c % 3 === 0 && i > 0) out = "'" + out;
+    }
+    return (n < 0 ? "-" : "") + out;
+  }
+  function fmtDec(n){ return (Math.round(n * 10) / 10).toString().replace(".", ","); }
+
+  for(var i = 0; i < METIERS.length; i++){
+    var o = document.createElement("option");
+    o.value = METIERS[i].id; o.textContent = METIERS[i].label;
+    elMetier.appendChild(o);
+  }
+  elMetier.value = "sanitaire";
+
+  function metierActuel(){
+    for(var i = 0; i < METIERS.length; i++){
+      if(METIERS[i].id === elMetier.value) return METIERS[i];
+    }
+    return METIERS[0];
+  }
+
+  function paint(el){
+    var pct = (el.value - el.min) / (el.max - el.min) * 100;
+    el.style.setProperty("--track",
+      "linear-gradient(90deg,#c8451f 0%,#c8451f " + pct + "%,#eee5d9 " + pct + "%,#eee5d9 100%)");
+  }
+
+  function animate(el, from, to){
+    var t0 = null, dur = 380;
+    if(el._raf) cancelAnimationFrame(el._raf);
+    function frame(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(from + (to - from) * e);
+      if(p < 1) el._raf = requestAnimationFrame(frame);
+    }
+    el._raf = requestAnimationFrame(frame);
+  }
+  var last = { mois: 0 };
+
+  /* ---------- La fausse recherche Google ---------- */
+  function majSerp(){
+    var m = metierActuel();
+    var ville = elVille.value.trim() || "ta ville";
+    var requete = m.requete + " " + ville;
+    $("serp-query").textContent = requete;
+    $("serp-you").textContent   = "Ton entreprise, quelque part là-dedans";
+    /* le bouton ouvre la vraie recherche Google, avec sa requête à lui */
+    $("btn-google").setAttribute("href",
+      "https://www.google.com/search?q=" + encodeURIComponent(requete));
+  }
+
+  /* ---------- Le calcul ---------- */
+  function calcul(){
+    var m       = metierActuel();
+    var hab     = +elHab.value;
+    var panier  = +elPanier.value;
+    var capture = CAPTURE[elPos.value];
+
+    var recherches = hab / 10000 * m.idx;
+    var demandes   = recherches * TAUX_APPEL;
+    var gagnables  = Math.max(0, demandes * (CIBLE_TOP3 - capture));
+    var chGagnes   = gagnables * TAUX_SIGNE;
+    var chfMois    = chGagnes * panier;
+    var chfAn      = chfMois * 12;
+
+    $("v-hab").textContent    = fmt(hab);
+    $("v-panier").textContent = fmt(panier) + " CHF";
+
+    $("r-recherches").textContent = fmt(recherches);
+    $("r-demandes").textContent   = fmt(demandes);
+    $("r-perdues").textContent    = fmtDec(gagnables);
+    $("r-chantiers").textContent  = fmtDec(chGagnes);
+
+    animate($("r-mois"), last.mois, chfMois);
+    last.mois = chfMois;
+    $("r-an").innerHTML = "soit <b>" + fmt(chfAn) + " CHF</b> sur douze mois";
+
+    var v = $("verdict");
+    if(elPos.value === "top3"){
+      v.innerHTML = "<b>Tu sors déjà dans les trois premiers.</b> On ne va pas t'inventer une " +
+        "perte : sur Google, tu prends déjà l'essentiel de ce qui se cherche chez toi. Ce qu'il " +
+        "reste à aller chercher, ce sont les gens qui ne cherchent pas encore. Et ceux-là ne " +
+        "sont pas sur Google.";
+    } else if(chGagnes < 0.6){
+      v.innerHTML = "Ça fait <b>moins d'un chantier par mois</b>, mais <b>" + fmt(chfAn) + " CHF</b> " +
+        "sur l'année. Et ce sont des chantiers où tu arrives seul, sans trois autres prix sur " +
+        "la table.";
+    } else {
+      var mot = (chGagnes < 2 ? " chantier par mois</b> qui se fait sans toi. "
+                              : " chantiers par mois</b> qui se font sans toi. ");
+      v.innerHTML = "<b>" + fmtDec(chGagnes) + mot +
+        "Et personne ne t'appellera pour te dire qu'il ne t'a pas trouvé.";
+    }
+  }
+
+  /* ---------- Événements ---------- */
+  var premierContact = false;
+  function touche(){
+    if(premierContact) return;
+    premierContact = true;
+    track("CalculateurUtilise", true);
+  }
+  [elHab, elPanier].forEach(function(el){
+    el.addEventListener("input", function(){ paint(el); calcul(); touche(); });
+    paint(el);
+  });
+  elPos.addEventListener("change", function(){ calcul(); touche(); });
+  elVille.addEventListener("input", majSerp);
+  $("btn-google").addEventListener("click", function(){ track("TestGoogle", true); });
+  elMetier.addEventListener("change", function(){
+    elPanier.value = metierActuel().panier;
+    paint(elPanier);
+    majSerp();
+    calcul();
+  });
+
+  majSerp();
+  calcul();
+
+  /* ---------- CALENDLY : popup + repli sur le lien ---------- */
+  function urlCalendly(){
+    var u = CONFIG.CALENDLY_URL, q = window.location.search;
+    if(q.indexOf("utm_") > -1){ u += (u.indexOf("?") > -1 ? "&" : "?") + q.replace("?", ""); }
+    return u;
+  }
+  var pasRempli = CONFIG.CALENDLY_URL.indexOf("TON-LIEN") > -1;
+  var boutons = document.querySelectorAll(".js-book");
+  for(var b = 0; b < boutons.length; b++){
+    (function(btn){
+      if(!pasRempli) btn.setAttribute("href", urlCalendly());
+      btn.addEventListener("click", function(e){
+        /* clic sur le bouton : intention, pas rendez-vous. Événement perso,
+           jamais un événement standard — sinon Meta compte une conversion
+           pour quelqu'un qui n'a rien réservé. */
+        track("ClicRdv", true);
+        if(pasRempli) return;
+        if(window.Calendly && Calendly.initPopupWidget){
+          e.preventDefault();
+          Calendly.initPopupWidget({ url: urlCalendly() });
+        }
+      });
+    })(boutons[b]);
+  }
+  /* le seul vrai signal de conversion : le créneau est confirmé par Calendly */
+  window.addEventListener("message", function(e){
+    if(e.data && e.data.event === "calendly.event_scheduled"){
+      track("Schedule");
+      track("Lead");
+    }
+  });
+
+  /* ---------- Barre CTA mobile ---------- */
+  var sticky = $("stickyCta"), ancre = $("sequence"), rdvEl = $("rdv");
+  function onScroll(){
+    var passe = window.scrollY > (ancre.offsetTop + 300);
+    var r = rdvEl.getBoundingClientRect();
+    var rdvVisible = (r.top < window.innerHeight && r.bottom > 0);
+    if(passe && !rdvVisible) sticky.classList.add("show");
+    else sticky.classList.remove("show");
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  window.addEventListener("resize", onScroll);
+  onScroll();
+
+  $("year").textContent = new Date().getFullYear();
+})();
+</script>
+
+</body>
+</html>
