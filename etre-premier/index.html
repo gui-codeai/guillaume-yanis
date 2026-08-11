@@ -322,7 +322,6 @@ footer a:hover{color:var(--ink)}
   --gain:#2f7d4f;
   --font:"Avenir Next","Avenir","Segoe UI",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
   --serif:"Didot","Didot LT STD","Bodoni MT","Bodoni 72","Playfair Display",Garamond,Georgia,"Times New Roman",serif;
-  --cond:"DIN Condensed","DIN Alternate","Oswald","Haettenschweiler","Arial Narrow",Impact,sans-serif;
 }
 
 /* --- les phrases de marque : Didot italique, jamais en gras --- */
@@ -358,13 +357,20 @@ h1 sup,h2 sup{font-weight:400;font-size:.42em}
 .btn:hover{transform:none;background:var(--accent-dark)}
 .btn--ghost{border:2px solid var(--ink);font-size:14px}
 
-/* --- les chiffres : DIN Condensed, capitales, très grande taille --- */
+/* --- les chiffres : même sans-serif que le reste, en gras, chiffres alignés.
+       DIN Condensed n'existe ni sur Windows ni sur Android : le navigateur
+       tombait sur Impact, illisible dès qu'il y a une apostrophe. --- */
 .stat .n,.big-number,.slider-val{
-  font-family:var(--cond);text-transform:uppercase;font-weight:700;letter-spacing:.01em;
+  font-family:var(--font);text-transform:none;font-weight:700;
+  letter-spacing:-.02em;font-variant-numeric:tabular-nums;
 }
-.stat .n{font-size:44px}
-.big-number{font-size:clamp(50px,13vw,74px)}
-.big-number .chf{font-size:.34em}
+.stat .n{font-size:42px}
+.big-number{font-size:clamp(44px,11vw,64px)}
+.big-number .chf{
+  font-size:.3em;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;margin-left:10px;
+}
+.slider-val{font-size:19px}
 
 
 /* --- le trait tracé à la main, sous la phrase de marque --- */
